@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css/estilos.css">
+  <script type="text/javascript" src="librerias/jquery.js"></script>
+  <script type="text/javascript" src="librerias/sha.js"></script>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div class="principio">
+<h2>¿Que desea hacer?</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Registrate</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log in</button>
+
+</div>
+<div id="id01" class="modal">
+
+
+  <form name="form" class='formReg' action="../index.html">
+    <div class="container">
+      <h1>Registrate</h1>
+      <p>Rellena el formulario para registrarte.</p>
+      <hr>
+        <fieldset>
+        Nombre y apellido:  *<br>
+        <input type="text" name="nombre" required>
+       
+        <br><br>
+        Correo electronico:  *<br>
+        <input type="text" name="email" required> 
+
+        <br><br>
+        Contraseña:  *<br>
+        <input type="password" name="contra" required> 
+
+         <br><br>
+        Confirmacion de contraseña:  *<br>
+        <input type="password" name="confirmacion" required> 
+         <br><br>
+
+         Sexo:
+        <select> 
+          <option value="femenino">Femenino</option> 
+          <option value="masculino">Masculino</option>
+        </select> 
+
+        <br><br>
+        Fecha de nacimiento:<br>
+        <input type="date" name="nac"> 
+         <br><br>
+
+         
+        <label> Direccion:<br> <input type="text" name="direccion" class="direccion"></label>
+         <br><br>
+         
+         Pais:
+          <label>
+            <select class="country" name="country"> 
+              <option value="Spain" class="paises">Spain</option>
+            </select> 
+          </label>
+
+        <br><br>
+
+<div id="tarjeta">          
+       
+         <br>
+</div>
+
+    Desea recibir notificacion de novedades?
+    <input type="checkbox" name="novedades">
+
+    <br><br>
+
+    Desea recibir recepcion de la revista digital?
+    <input type="checkbox" class="revista">
+    <br><br>
+        
+           
+        (Los campos con * serán obligatorios)
+        </fieldset>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+        <button>Registrate</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="login">
+  <form name="form2" class='form2' action="../index.html">
+    <div class="container">
+      <h1>Log in</h1>
+       <fieldset>
+        Correo electronico: <br>
+        <input type="text" name="email2" required>
+        <br><br>
+        Contraseña:
+         <input type="password" name="contra2" required>
+        <br><br>
+      </fieldset>
+       <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+        <button>Log In</button>
+
+    </div>
+   </form>
+ </div>
+
+<script type="text/javascript" src="js/validacion.js"></script>
+<script type="text/javascript" src="js/dom.js"></script>
+</body>
+</html>
+
+
+
+
+
+

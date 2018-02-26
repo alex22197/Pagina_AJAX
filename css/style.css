@@ -1,0 +1,156 @@
+.fondoHeader{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.galeria:hover .middle {
+  opacity: 1;
+}
+.corazon{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top:74em;
+	right: 14em;
+}
+
+.form{
+	position: relative;
+}
+#desplegable{
+	position: absolute;
+	top: 75%;
+	background-color: white; 
+
+
+}
+.elemento{
+	margin-top: 4px;
+}
+.favorito{
+   height: 30px;
+  width: 30px;
+  position: relative;
+  top:74em;
+  right: 12em;
+   
+
+}
+.titulo{
+	font-family: Indie flower;
+	font-size: 4rem;
+
+}
+.comentario{
+   height: 30px;
+  width: 30px;
+  position: relative;
+  top:74em;
+  right: 10em;
+  
+}
+.carro{
+	float: right;
+}
+.login{
+	border:solid black 1px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background:#129490;
+}
+.registro{
+	border:solid black 1px;
+	text-align: center;
+	background:#129490;
+}
+
+.foto{
+	height: 25em;
+}
+
+.pie{
+
+	background:black;
+	height: 20%;
+	width: 100%;
+}
+
+
+.derecho{
+	color: white;
+
+}
+
+.redes{
+	color:white;
+	float: right;
+}
+.icono{
+	width: 10%;
+	margin-left: 12%;
+
+}
+
+.title-galery{
+	font-family: 'Shrikhand', cursive;
+	text-align: center;
+}
+
+.icoPie{
+	width: 9%;
+	margin-left: 5%;
+	float: right;
+}
+.icons{
+	background:black;
+}
+
+.ue{
+	float: left;
+}
+.line{
+	height: 1%;
+	background:white;
+}
+.info{
+	background:black;
+	color:white;
+}
+@media (max-width: 500px){
+	.ue{
+		display:none;
+	}
+
+	.icoPie{
+		display: none;
+	}
+	.pie{
+		display: none;
+
+	}
+} 
+@media (max-width: 700px){
+	.foto{
+		margin-top: 10%;
+	}
+	.pie{
+		margin-top: 5%;
+	}
+	.carousel{
+		margin-bottom: 10%;
+	}
+
+
+}
